@@ -33,17 +33,14 @@ mod tests {
 
     #[test]
     fn it_works_too() {
-        assert!(make_equal(vec![
-            String::from("bb"),
-            String::from("cc"),
-        ]));
+        assert!(make_equal(vec![String::from("bb"), String::from("cc"),]));
     }
 
     #[test]
     fn it_does_not_work() {
-        assert_eq!(make_equal(vec![
-            String::from("b"),
-            String::from("cc"),
-        ]), false);
+        assert_eq!(
+            make_equal(vec![String::from("b"), String::from("cc"),]),
+            false
+        );
     }
 }
